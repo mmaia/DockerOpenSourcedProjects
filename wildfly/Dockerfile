@@ -15,8 +15,8 @@ MAINTAINER Marcos Maia "maia.marcos@gmail.com"
 # make sure centos is up to date
 RUN yum update -y && yum install tar -y
 
-#create user and group to use with wildfly
-RUN groupadd -r wildfly && useradd -r -g wildfly wildfly
+#create user and group to use with wildfly(not being used by now)
+#RUN groupadd -r wildfly && useradd -r -g wildfly wildfly
 
 #copy files to tmp
 COPY wildfly-8.2.0.Final.tar.gz tmp/wildfly-8.2.0.Final.tar.gz
